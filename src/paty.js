@@ -3,12 +3,12 @@
 
 // hola chicas aqui dejare lo que he hecho conel codigo y podran ver como ha sido mi logica para imprimir la 
 // informacion en el navegador
-// cualquier duda me avisan y lo analizamos por linea de codigo para 
+// cualquier duda me avisan y lo analizamos por linea de codigo 
 // por ejemplo este mensaje ha sido escrito en el archivo : paty.js  en las lineas 4 5 6 y 7
 
 
 
-// la url entregada en el proyecto es : http://www.omdbapi.com/
+// La url entregada en el proyecto es : http://www.omdbapi.com/
 
 // los parametro entregados por esta API SON: 
 
@@ -47,7 +47,7 @@
 // N°1
 
 // si se busca por id la busqueda requiere --> id + keys  --> USO : peliculas recomendadas seleccionadas
-                                                                    // y buscadas anteriormente (por nosotras)
+// y buscadas anteriormente (por nosotras)
 
 // ---------------------- en este caso 
 // el link de busqueda por ejemplo : http://www.omdbapi.com/?i=tt0371746&apikey=8f338895 
@@ -92,30 +92,30 @@
 // PERO!! si queremos buscar por busqueda general pasa que a lo mejor con la palabra la base de datos o mejor dicho la api 
 // nos devolvera todo lo que coincida con ese valor entregado ejemplo SI BUSCAMOS M A R V E L 
 
-// LA API develve --->  un objeto JSON --> 
+// LA API devuelve --->  un objeto JSON --> 
 
 // en la linea 108  y 109 del codigo no son peliculas son JUEGOS de MARVEL
 
 
 //                         {"Search":[ {"Title":"Captain Marvel","Year":"2019","imdbID":"tt4154664","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SX300.jpg"},
-                        //                {"Title":"Captain Marvel","Year":"2019","imdbID":"tt4154664","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SX300.jpg"},
-                        //                {"Title":"Marvel One-Shot: Item 47","Year":"2012","imdbID":"tt2247732","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMTM2MzY1ODcyN15BMl5BanBnXkFtZTcwNTE3OTIxOA@@._V1_SX300.jpg"},
-                        //                {"Title":"Marvel One-Shot: All Hail the King","Year":"2014","imdbID":"tt3438640","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BYTQzNzZiOWItOTNlMC00MjA4LWI5ZTAtODk3MmQ2MGJiYTdmXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg"},
-                        //                {"Title":"Marvel One-Shot: Agent Carter","Year":"2013","imdbID":"tt3067038","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BYzYyODBjY2MtZGU3MC00YWE3LWExOTUtMzkyMjNkYjUzNjA4XkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_SX300.jpg"},
-                        //                {"Title":"Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer","Year":"2011","imdbID":"tt2011109","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BYmIxYzk2ZTItNTE1OC00NWRkLTkyOTEtMDM1ZjY5MjJlYWE4XkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_SX300.jpg"},
-                        //                {"Title":"Marvel One-Shot: The Consultant","Year":"2011","imdbID":"tt2011118","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMThhNWExYzgtYzQwOS00MDM5LWFmOGYtOGZhZDQ4MWYzMDNlXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_SX300.jpg"},
-                        //                {"Title":"Lego Marvel Super Heroes","Year":"2013","imdbID":"tt2620204","Type":"game","Poster":"https://ia.media-imdb.com/images/M/MV5BOTA5ODA2NTI2M15BMl5BanBnXkFtZTgwNTcxMzU1MDE@._V1_SX300.jpg"},
-                        //                {"Title":"Marvel: Ultimate Alliance","Year":"2006","imdbID":"tt0814207","Type":"game","Poster":"N/A"},{"Title":"Adventures of Captain Marvel","Year":"1941","imdbID":"tt0033317","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BNjg0NTk3NjUyNF5BMl5BanBnXkFtZTgwNDQ5MjM1MjE@._V1_SX300.jpg"}],
-                        // "totalResults":"134","Response":"True"}
+//                {"Title":"Captain Marvel","Year":"2019","imdbID":"tt4154664","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SX300.jpg"},
+//                {"Title":"Marvel One-Shot: Item 47","Year":"2012","imdbID":"tt2247732","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMTM2MzY1ODcyN15BMl5BanBnXkFtZTcwNTE3OTIxOA@@._V1_SX300.jpg"},
+//                {"Title":"Marvel One-Shot: All Hail the King","Year":"2014","imdbID":"tt3438640","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BYTQzNzZiOWItOTNlMC00MjA4LWI5ZTAtODk3MmQ2MGJiYTdmXkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg"},
+//                {"Title":"Marvel One-Shot: Agent Carter","Year":"2013","imdbID":"tt3067038","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BYzYyODBjY2MtZGU3MC00YWE3LWExOTUtMzkyMjNkYjUzNjA4XkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_SX300.jpg"},
+//                {"Title":"Marvel One-Shot: A Funny Thing Happened on the Way to Thor's Hammer","Year":"2011","imdbID":"tt2011109","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BYmIxYzk2ZTItNTE1OC00NWRkLTkyOTEtMDM1ZjY5MjJlYWE4XkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_SX300.jpg"},
+//                {"Title":"Marvel One-Shot: The Consultant","Year":"2011","imdbID":"tt2011118","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMThhNWExYzgtYzQwOS00MDM5LWFmOGYtOGZhZDQ4MWYzMDNlXkEyXkFqcGdeQXVyNjA3OTI5MjA@._V1_SX300.jpg"},
+//                {"Title":"Lego Marvel Super Heroes","Year":"2013","imdbID":"tt2620204","Type":"game","Poster":"https://ia.media-imdb.com/images/M/MV5BOTA5ODA2NTI2M15BMl5BanBnXkFtZTgwNTcxMzU1MDE@._V1_SX300.jpg"},
+//                {"Title":"Marvel: Ultimate Alliance","Year":"2006","imdbID":"tt0814207","Type":"game","Poster":"N/A"},{"Title":"Adventures of Captain Marvel","Year":"1941","imdbID":"tt0033317","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BNjg0NTk3NjUyNF5BMl5BanBnXkFtZTgwNDQ5MjM1MjE@._V1_SX300.jpg"}],
+// "totalResults":"134","Response":"True"}
 
 // el link de busqueda por ejemplo :  http://www.omdbapi.com/?s=marvel&apikey=8f338895
 
-// ENTONCES POR eso es importante al usaar s o t como parametros 
+// ENTONCES POR eso es importante al usar        "s" o "t" como parametros 
 // usar tambien TYPE id no porque es exacta para cada objeto estricto en JSON pero si para titulos o busquedas genericas 
 
 
 // EN ESTE CASO 
-// RESTRINGMOS usando el siguiente link --> 
+// RESTRINGMOS usando el siguiente link --> http://www.omdbapi.com/?type=movie&s=marvel&apikey=8f338895
 
 // {"Search":[
 //     {"Title":"Captain Marvel","Year":"2019","imdbID":"tt4154664","Type":"movie","Poster":"https://m.media-amazon.com/images/M/MV5BMTE0YWFmOTMtYTU2ZS00ZTIxLWE3OTEtYTNiYzBkZjViZThiXkEyXkFqcGdeQXVyODMzMzQ4OTI@._V1_SX300.jpg"},
@@ -136,60 +136,54 @@
 
 //***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
 
+//                   A P L I Q U E  M O S 
 
 // N°4
 
+
 document.getElementById('aqui').addEventListener('click', () => {
-    
-  const  urlOMDB ="https://www.omdbapi.com/?apikey=4896bf68&type=movie";
-    movieRecomend(urlOMDB);
+
+    // en este link es generico no es necesario colocar type en caso que la busqueda sea por id
+    // pero recordar que id es solo en caso de eleguir nosotras las peliculas 
+    // por busqueda el usuario no colocera el id a menos que realicemos constantes para peliculas y las llamemos a traves del id
+
+    const url = "https://www.omdbapi.com/?&type=movie&apikey=8f338895";
+    carruselPelis(url);
+
 });
 
 
-function movieRecomend(){
-    let dataRecomend=["tt2015381"];
-    document.getElementById('result').innerHTML +=
-    `<h3>Peliculas recomendadas</h3>
-    <section id="moviebox" class="row">
-    </section>`  
 
-    dataRecomend.forEach(movieElement=>{
+
+
+
+function carruselPelis(url) {
+ 
+  
+    let arrIds = ["tt1843866", "tt3501632", "tt4154756"];
+
+
+    document.getElementById('result').innerHTML +=
+        `<h3>Peliculas carrusel Marvel</h3>
+    <section id="result" class="row">
+    </section>`
+
+    arrIds.forEach(element => {
+
         /*Traerse los detalles de la pelicula*/
-        fetch(urlOMDB+"&i="+movieElement)
-        .then(function(response) {
-        return response.json();
-        })
-        .then(function(element) {
-            document.getElementById('moviebox').innerHTML += `
-            <!--Peliculas recomendadas-->
-        
-            <div id="movieboxresult" class="col s6 m6 l3 xl3"> 
-                <div id="${element.imdbID}" data-target="modal${element.imdbID}" class="modal-trigger ">            
-                    <img src="${element.Poster}" alt="${element.Title}" onerror="this.onerror=null;this.src='Image/notavail.jpg';"/>
-                    <p>${element.Title}</p>   
-                </div>
-                <div id="modal${element.imdbID}" class="modal">
-                    <div class="modal-footer">
-                        <a href="#!" class="modal-close waves-effect btn-flat">X</a>
-                    </div>
-        
-                    <div class="modal-content row">
-        
-                        <div id="poster" class="col s5 m5 l5">
-                            <img src="${element.Poster}" alt="${element.Title}" onerror="this.onerror=null;this.src='Image/notavail.jpg';"/>
-                        </div>
-        
-                        <div id="description"class="col s7 m7 l7">
-                            <h4>${element.Title}</h4>   
-                            <p>${element.Year}</p>
-                            <p>Genre: ${element.Genre}</p>
-                            <p>Plot: ${element.Plot}</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            `  
-            $('.modal').modal();
-        });       
-        });
+        fetch(url + "&i=" + element)
+
+            .then((response) => (response.json()))
+
+            .then(   (element) => {
+              
+                document.getElementById('moviebox').innerHTML +=  `<img src="${element.Poster}" alt="Logotipo">`
+                
+                
+               }
+
+            
+            )
+    });
 }
+
