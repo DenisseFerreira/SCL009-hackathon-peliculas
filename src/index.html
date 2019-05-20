@@ -10,26 +10,58 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
     <title>Pelis Marvel</title>
   </head>
   <body>
 
   
     <div class="container-fluid">
+      <!-- Start HEADER -->
+      <header>
+			<div class="logo">
+                    <img src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/img/logoMarvel.png" alt="" >
+            </div>
+            <nav class="menu">
+                <a href="">home</a>
+                <a href="">menu1</a>
+                <a href="">menu2</a>
+            </nav>
+	 </header>
+      <!-- End GEADER -->
 
-      <header class="default-header">
-        <!-- chicas este div fue adherido solo con el fin de evaluar sin los link de bootstrap estaban funcionando -->
-        <div class="alert alert-info" role="alert">
-          A simple info alert—check it out!
-        </div>
-      </header>
+      <!-- Start SECTION PROMISEPrincipal -->
+     <section class="promisePrincipal" >
+            <div class="jumbotron">
+                <div id="containerImagePromise" class="promise">
+                        <!-- ver si se puede crear esta imagen desde dom, dependiendo de la utilizacion de otra API -->
+                        <img id="imagePromise" src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/img/promiseSpiderman.jpg">
+                </div>
+                  
+                    <h1 class="display-4">Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+           </div>
+	 </section>
+	 <!-- End  SECTION PROMISE MOVIE-->
+
+
         <!-- chicas este div permite imprimir info de la API en el navegador por mientras el codigo dom esta en archivo paty.js linea 142  -->
-      <div id="result"><button id="aqui">pincheale</button></div>
+      <div id="result">
+          <div id="moviebox">
+              <div id="aa" >
+          </div>
+          <button id="aqui">pincheale</button>
+      </div>
+
+     
     </div>
 
 
 
-    
+
 
    <!-- Etiqueta script archivos Bootstrap en proyecto  -->
     <script
