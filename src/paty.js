@@ -1,4 +1,84 @@
 
+//                   A P L I Q U E  M O S 
+// N°4
+document.getElementById('aqui').addEventListener('click', () => {
+
+    // en este link es generico no es necesario colocar type en caso que la busqueda sea por id
+    // pero recordar que id es solo en caso de eleguir nosotras las peliculas 
+    // por busqueda el usuario no colocera el id a menos que realicemos constantes para peliculas y las llamemos a traves del id
+
+    const url = "https://www.omdbapi.com/?&type=movie&apikey=8f338895";
+    carruselPelis(url);
+
+});
+
+
+
+function carruselPelis(url) {
+
+
+    let arrIds = ["tt1843866"];
+    let arrIds2 = ["tt3501632"];
+    let arrIds3 = ["tt4154756"];
+
+    // let posDos = arrIds[1];
+    // let  posTres =arrIds[2];
+    fetch(url + "&i=" + arrIds)
+
+        .then((response) => (response.json()))
+
+        .then(elemento => {
+
+            
+            document.getElementById('moviebox').innerHTML += `<img id ="aa" src="${elemento.Poster}" alt="logo">`
+        })
+
+
+    fetch(url + "&i=" + arrIds2)
+
+        .then((response) => (response.json()))
+
+        .then(elemento => {
+
+
+            document.getElementById('moviebox').innerHTML += `<img id ="bb" src="${elemento.Poster}" alt="logo">`
+        })
+    fetch(url + "&i=" + arrIds3)
+
+        .then((response) => (response.json()))
+
+        .then(elemento => {
+
+
+            document.getElementById('moviebox').innerHTML += `<img id ="cc" src="${elemento.Poster}" alt="logo">`
+        })
+   
+    
+}
+
+
+function carruselPelis2(url) {
+
+
+    let arrIds = ["tt1843866"];
+    let arrIds2 = ["tt3501632"];
+    let arrIds3 = ["tt4154756"];
+
+    // let posDos = arrIds[1];
+    // let  posTres =arrIds[2];
+    fetch(url + "&i=" + arrIds)
+
+        .then((response) => (response.json()))
+
+        .then(elemento => {
+
+            
+            document.getElementById('moviebox').innerHTML += `<img id ="aa" src="${elemento.Poster}" alt="logo">`
+        })
+
+
+    
+}
 // PROBANDO CODIGO
 
 // hola chicas aqui dejare lo que he hecho conel codigo y podran ver como ha sido mi logica para imprimir la 
@@ -135,55 +215,3 @@
 
 
 //***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************
-
-//                   A P L I Q U E  M O S 
-
-// N°4
-
-
-document.getElementById('aqui').addEventListener('click', () => {
-
-    // en este link es generico no es necesario colocar type en caso que la busqueda sea por id
-    // pero recordar que id es solo en caso de eleguir nosotras las peliculas 
-    // por busqueda el usuario no colocera el id a menos que realicemos constantes para peliculas y las llamemos a traves del id
-
-    const url = "https://www.omdbapi.com/?&type=movie&apikey=8f338895";
-    carruselPelis(url);
-
-});
-
-
-
-
-
-
-function carruselPelis(url) {
- 
-  
-    let arrIds = ["tt1843866", "tt3501632", "tt4154756"];
-
-
-    document.getElementById('result').innerHTML +=
-        `<h3>Peliculas carrusel Marvel</h3>
-    <section id="result" class="row">
-    </section>`
-
-    arrIds.forEach(element => {
-
-        /*Traerse los detalles de la pelicula*/
-        fetch(url + "&i=" + element)
-
-            .then((response) => (response.json()))
-
-            .then(   (element) => {
-              
-                document.getElementById('moviebox').innerHTML +=  `<img src="${element.Poster}" alt="Logotipo">`
-                
-                
-               }
-
-            
-            )
-    });
-}
-

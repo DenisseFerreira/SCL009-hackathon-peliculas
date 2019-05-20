@@ -1,0 +1,66 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css?family=Marvel&display=swap');
+
+/*                                    CSS para todo el archivo                 */
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+ body {
+    background:#000033;
+    font-family: 'Marvel',sans-serif;
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+
+/*                       css HEADER */
+header{
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .menu a:hover{
+    text-decoration: underline;
+}
+
+header .menu a {
+    color: blanchedalmond;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 60px;
+}
+
+/*                        css SECTION  -  PROMISE */
+
+
+.promisePrincipal {
+   width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* div jumbotron --div  promise -- img spiderman */
+.jumbotron{
+    border-radius: 0.5%;
+    background:#222a4f;
+    color:blanchedalmond; 
+    font-family: 'Marvel', sans-serif;
+}
+
+
+.promise img {
+
+    width: 60%;
+    border-radius: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}   
