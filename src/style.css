@@ -9,6 +9,7 @@
     padding: 0;
 
 }
+
  body {
     background:#000033;
     font-family: 'Marvel',sans-serif;
@@ -16,51 +17,82 @@
     background-attachment: fixed;
 }
 
-/*                       css HEADER */
-header{
-    width: 100%;
-    padding: 50px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
+/* css Header  */
+.containerGral {
+    width: 90%;
+
+}
+header {
+    padding: 10px;
+    align-content: center;
 }
 
-header .menu a:hover{
-    text-decoration: underline;
+nav {
+    background: hsl( 0, 0%, 100%);
 }
 
-header .menu a {
-    color: blanchedalmond;
-    text-decoration: none;
-    margin-right: 40px;
-    font-size: 60px;
+.buscador {
+    color: #F5F5F5;
 }
 
-/*                        css SECTION  -  PROMISE */
 
 
-.promisePrincipal {
-   width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+.title {
+    color: antiquewhite;
+    padding-right: 10px;
 }
 
-/* div jumbotron --div  promise -- img spiderman */
+.busquedatext{
+    margin-right: 20%;
+    color: blanchedalmond
+}
 .jumbotron{
-    border-radius: 0.5%;
-    background:#222a4f;
-    color:blanchedalmond; 
-    font-family: 'Marvel', sans-serif;
+    padding: 20px;
+    margin-block-start: 10px;
 }
 
 
-.promise img {
+.buscadorUser{
+    padding:20px;
+    width: 100%;
+   
+}
 
-    width: 60%;
-    border-radius: 0.5%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}   
+.botonBuscar{
+    padding:20px;
+
+}
+.inputBusqueda{
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+
+
+.containerImagenPromise{
+ 
+    margin-top: 10px;
+}
+.butonPrimase{
+   margin-right: 20px;
+}
+.infoPremise{
+    padding: 20px;
+    background: #F5F5F5;
+    margin-top: 5px;  
+}
+@media screen and (max-width:800px){
+    /* estilos  */
+    body {
+        background: #000066;
+    }
+ 
+   
+}
+
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+

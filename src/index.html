@@ -10,71 +10,169 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
-    <title>Pelis Marvel</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Universo Marvel</title>
   </head>
   <body>
 
-  
-    <div class="container-fluid">
+    <div class="containerGral container-fluid">
       <!-- Start HEADER -->
       <header>
-			<div class="logo">
-                    <img src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/img/logoMarvel.png" alt="" >
-            </div>
-            <nav class="menu">
-                <a href="">home</a>
-                <a href="">menu1</a>
-                <a href="">menu2</a>
-            </nav>
-	 </header>
-      <!-- End GEADER -->
-
-      <!-- Start SECTION PROMISEPrincipal -->
-     <section class="promisePrincipal" >
-            <div class="jumbotron">
-                <div id="containerImagePromise" class="promise">
-                        <!-- ver si se puede crear esta imagen desde dom, dependiendo de la utilizacion de otra API -->
-                        <img id="imagePromise" src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/img/promiseSpiderman.jpg">
+          <div class="container-fluid">
+              <div class="row">
+                <div class="col">
+                  <img
+                    src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/img/logoMarvel.png"
+                    alt=""
+                    class="img-fluid"
+                  />
                 </div>
-                  
-                    <h1 class="display-4">Hello, world!</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <hr class="my-4">
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-           </div>
-	 </section>
-	 <!-- End  SECTION PROMISE MOVIE-->
+    
+                <div class="text-center">
+                  <h2 class="header title">Universo Marvel</h2>
+                </div>
+              </div>
+            </div>
+      </header>
+      <!-- End HEADER -->
 
+      <!-- Start NavBar -->
 
-        <!-- chicas este div permite imprimir info de la API en el navegador por mientras el codigo dom esta en archivo paty.js linea 142  -->
-      <div id="result">
-          <div id="moviebox">
-              <div id="aa" >
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container ">
+          <a class="navbar-brand" href="#">MENU</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Comic</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Peliculas</a
+                >
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">peliculas por fase</a>
+                  <a class="dropdown-item" href="#"
+                    >ultimas peliculas 2018-2019</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"
+                    >personajes principales por pelicula</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Spoiler</a
+                >
+              </li>
+            </ul>
           </div>
-          <button id="aqui">pincheale</button>
-      </div>
+        </div>
+      </nav>
 
-     
+
+
+      <section >
+          <div class="buscadorUser container-fluid ">
+              <div class="row">
+                <div class="col-lg-2">
+                    <h2 class="busquedatext ">Search : </h2>
+                </div>
+    
+                <div class="inputBusqueda text-center col-lg-8 col-md-6">
+                    <input id="pelisUser" class="pelisUser form-control " type="text" placeholder="Busca tu pelicula favorita.." >
+                </div>
+                <div class="botonBuscar col-auto col-lg-2">
+                    <button id= "botonBuscar" type="submit" class="btn btn-primary">Movie Go!</button>
+                  </div>
+              </div>
+            </div>
+      </section>
+
+
+      <!-- End NavBar -->
+
+      <!-- Start Section JUMBOTRON -->
+      <section class="containerJumbotron">
+        <div class="jumbotron">
+          <div class="container-fluid">
+                <div class=" row">
+                    <div class="containerPromise justify-content-center col-12 col-lg-6">
+
+                            <div class="PrintPromise ">
+                                    <div id="containerXx"class="containerXx" ></div>
+                            </div>
+
+                            <div class="botonPromise d-flex justify-content-center">
+                                    <button id="butonPrimase " class="butonPrimase btn btn-primary  btn-lg " href="#"> Ver mas </button>
+                            </div>
+                            <div class="infoPremise col-12 "> 
+                                <p class="parrafoExplicativo">La película empieza después de los eventos de Avengers: Endgame, 5​6​ cuando Peter Parker va en un viaje escolar a Europa con sus amigos. Mientras está en el extranjero disfrutando de su viaje, es obligado a unirse a Mysterio para detener a los Elementales, unos extraños seres que nadie sabe de dónde vienen pero dispuestos a acabar con todo lo que se les atreviese en su camino.
+                                </p>
+                            </div>
+                    </div>
+                    <div class="containerImagenPromise  col">
+                        <img class="img-fluid " src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/img/promiseSpiderman.jpg" alt=""/>
+                    </div>  
+                </div>
+           </div>
+        </div>
+      </section>
+
+
+      <section id="searching"  class="searching"></section>
+      <button id="imprimiendoTmdb">probando probando</button>
+      <!-- End Section JUMBOTRON -->
+      <div id="results">
+        <p>Just testing out the Marvel API pulling some comics. For more information on the API go to <a href="https://developer.marvel.com">developer.marvel.com</a></p>
+      </div>
     </div>
 
-
-
-
-
-   <!-- Etiqueta script archivos Bootstrap en proyecto  -->
+    <!-- Etiqueta script archivos Bootstrap en proyecto  -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" ></script>
-    <script 
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  
-  
-      <!-- Etiqueta script archivos .js en proyecto  -->
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Etiqueta script archivos .js en proyecto  -->
+
     <script src="data.js"></script>
     <script src="main.js"></script>
     <script src="paty.js"></script>
+    <script src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/jquery/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
   </body>
 </html>
