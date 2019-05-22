@@ -37,9 +37,36 @@ const indicadorCarrusel = document.getElementById('indicadorCarrusel');
 /*  2 Obtener data de url */
 
 let gvRecomendadosId = [];
+//fase 1
+gvRecomendadosId.push('tt0371746'); //iron man 
+gvRecomendadosId.push('tt0800080'); // hulk
+gvRecomendadosId.push('tt1707807'); // iron
+gvRecomendadosId.push('tt0800369'); // thor
+gvRecomendadosId.push('tt0458339'); // capi
+gvRecomendadosId.push('tt0848228'); // avengers
+//fase 2
 gvRecomendadosId.push('tt0371746'); // iron man
 gvRecomendadosId.push('tt1981115'); //thor
 gvRecomendadosId.push('tt4203008'); // capi
+gvRecomendadosId.push('tt2395427'); // avengers/ultron
+gvRecomendadosId.push('tt5286008'); //guardianes 
+gvRecomendadosId.push('tt0478970'); // ant-man
+//fase 3
+gvRecomendadosId.push('tt3498820');//capi
+gvRecomendadosId.push('tt1211837');//doctor
+gvRecomendadosId.push('tt3896198');//guardianes
+gvRecomendadosId.push('tt2250912');//spider
+gvRecomendadosId.push('tt3501632');//thor
+gvRecomendadosId.push('tt1825683');//panther
+gvRecomendadosId.push('tt4154756');//avengers
+gvRecomendadosId.push('tt5095030');//ant-man
+gvRecomendadosId.push('tt4154664');//capitana
+gvRecomendadosId.push('tt4154796');//avengers
+gvRecomendadosId.push('tt6320628');//spider
+//fase 4
+//En desarrollo
+
+
 
 const traerRecomendados = () => {
     //    for(let i = 0;  i < gvRecomendadosId.length; i++) 
