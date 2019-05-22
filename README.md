@@ -93,8 +93,11 @@ _Criterios de aceptación._
 Para el desarrollo de esta aplicación web el trabajo realizado fue:
 
 **Patricia**
+
 **Cynthia**
+
 **Denisse Ferreira**
+
 Participó en áreas de UX relacionadas con el conocer al usuario mediante la confección de encuentas, análisis de los datos obtenidos, armado de página web, desarrollo de historias de usuario y criterios de aprobación. 
 En el área de front-end participó en el manejo del Dom y lógica para la obtención de datos mediante el uso de fetch al implementar la api OMDB. También utilizó framework bootstrap para usar carrusel y modales según necesidad. Redacción de Readme.
 
