@@ -133,37 +133,34 @@ document.getElementById('imprimiendoTmdb').addEventListener('click',()=>{
 
 
 
-
-// you will also have to setup the referring domains on your marvel developer portal
-var PRIV_KEY = "74aef842619d3e87c3ca24bd3368c59a75cecbc3";
-var PUBLIC_KEY = "bcbd97e7376cbe3834969b21831dbb13";
-
-function getMarvelResponse() {
-
-  // you need a new ts every request                                                                                    
-  var ts = new Date().getTime();
-  var hash = CryptoJS.MD5(ts + PRIV_KEY + PUBLIC_KEY).toString();
-  
-  // the api deals a lot in ids rather than just the strings you want to use
-  var characterId = '1009718'; // wolverine                                                                             
+// function tplawesome(e,t){res=e;for(var n)}
 
 
-  var url = 'http://gateway.marvel.com:80/v1/public/comics';
+function aa(){
 
-  console.log(url);
-  $.getJSON(url, {
-    ts: ts,
-    apikey: PUBLIC_KEY,
-    hash: hash,
-    characters: characterId
+    $('form').on('submit',function(e){
+        e.preventDefault();
+
+        varrequest = gabi.client.youtube.search.list({
+            part:'snippet',
+            type:'video',
+            q: encodeURIComponent($('#search').val()).replace(/%20/g,"+"),
+            maxResults:3,
+            order:'viewCount',
+            publishedAfter:""
+
+        });
+
+        request.execute(function(response){
+            console.log(response);
+        })
     })
-    .done(function(data) {
-      // sort of a long dump you will need to sort through
-      console.log(data);
-    })
-    .fail(function(err){
-      // the error codes are listed on the dev site
-      console.log(err);
-    });
-};
+}
+aa();
 
+function init(){
+    gapi.client.setApiKey('AIzaSyBBzB-teZ8ZwC9dnIJqmnGBAKepYfB126E');
+    gabi.client.load('youtube','v3',function(){
+
+    })
+}
