@@ -1,48 +1,37 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css?family=Marvel&display=swap');
-
 /*                                    CSS para todo el archivo                 */
-
-
 * {
     margin: 0;
     padding: 0;
-
 }
-
  body {
     background:#000033;
     font-family: 'Marvel',sans-serif;
     /* background-size: cover; */
     background-attachment: fixed;
 }
-
-
 /* css Header  */
 .containerGral {
     width: 90%;
-
 }
 header {
     padding: 10px;
     align-content: center;
 }
-
 nav {
     background: hsl( 0, 0%, 100%);
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
 }
-
 .buscador {
     color: #F5F5F5;
 }
-
-
-
 .title {
     color: antiquewhite;
     padding-right: 10px;
 }
-
 .busquedatext{
     margin-right: 20%;
     color: blanchedalmond
@@ -51,26 +40,26 @@ nav {
     padding: 20px;
     margin-block-start: 10px;
 }
-
-
 .buscadorUser{
-    padding:20px;
+    padding:40px;
     width: 100%;
+    background: #003399  ;
+  
    
 }
-
+.busquedatext{
+    margin-top:10px;
+}
 .botonBuscar{
     padding:20px;
-
 }
 .inputBusqueda{
     margin: 0;
     padding: 0;
+    align-items: center;
+    justify-content: center;
     width: 100%
 }
-
-
-
 .containerImagenPromise{
  
     margin-top: 10px;
@@ -91,8 +80,48 @@ nav {
  
    
 }
-
-
-
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
+.containerMp4Trailer{
+    width: 100%;
+    background:#F5F5F5;
+    padding: 2%;
+} 
+.DatesSpoiler{
+    width: 100%;
+    background:#F5F5F5;
+  
+    border-top: 20px solid #000033;
+   
+    margin-bottom: 40px; 
+} 
+.DatesSpoiler{
+   padding: 2%;
+   text-align: center;
+   color: #000033;
+   font-family: 'Marvel',sans-serif;
+   font-weight: 300;
+} 
+.DatesSpoiler .galeriaSpoilerYoutuber .contenedor-imagen {
+    margin-bottom: 10px;
+    max-height: 180px;
+    overflow: hidden; 
+}
+.DatesSpoiler .galeriaSpoilerYoutuber .contenedor-imagen a{
+    display: inline-block;
+    background: #000033;
+}
+.footer{
+    background: #003399  ;
+    color: #F5F5F5;
+}
+.footer a {
+  
+    color:#F5F5F5;
+    
+}
+.redes{
+   padding: 2%;
+}
+.social{
+ padding:2%;
+}
