@@ -10,7 +10,10 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="denisse.css" /> -->
     <title>Universo Marvel</title>
   </head>
   <body>
@@ -22,7 +25,7 @@
               <div class="row">
                 <div class="col">
                   <img
-                    src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/img/logoMarvel.png"
+                    src="/src/img/logoMarvel.png"
                     alt=""
                     class="img-fluid"
                   />
@@ -40,7 +43,7 @@
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container ">
-          <a class="navbar-brand" href="#">HOME</a>
+          <a class="navbar-brand" href="#" id="home">HOME</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
@@ -62,10 +65,9 @@
                        <!-- El siguiente div es un contenedor de boton para desplegue de menu en tamaño mediano  -->
                       <div class="dropdown-divider"></div>
                        <!-- los siguientes link corresponden a los enlaces redireccion a peliculas por FAS -->
-                  <a class="dropdown-item" href="#">Películas - Marvel Fase 1</a>
-                  <a class="dropdown-item" href="#">Películas - Marvel Fase 2</a>
-                 
-                  <a class="dropdown-item" href="#">Películas - Marvel Fase 3</a>
+                  <a class="dropdown-item" href="#" id="fase1">Películas - Marvel Fase 1</a>
+                  <a class="dropdown-item" href="#" id="fase2">Películas - Marvel Fase 2</a>
+                  <a class="dropdown-item" href="#" id="fase3">Películas - Marvel Fase 3</a>
 
                 </div>
 
@@ -108,7 +110,29 @@
 
       <!-- Start Section JUMBOTRON -->
       <section class="containerJumbotron">
-        <div class="jumbotron">
+        <!-- Peter parker -->
+        <div id="contenidoCarrusel">
+          <!-- Carussel inicio -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" style="background-color:black">
+            <!-- Indicators -->
+            <ol id="indicadorCarrusel" class="carousel-indicators">
+            </ol>
+            <!-- Wrapper for slides -->
+            <div id='contenedorPeliculas2' class="carousel-inner">
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          <!-- fin carrusel -->
+        </div>
+        <div class="jumbotron" id="peterpaker">
           <div class="container-fluid">
                 <div class=" row">
                     <div class="containerPromise justify-content-center col-12 col-lg-6">
@@ -126,7 +150,7 @@
                             </div>
                     </div>
                     <div class="containerImagenPromise  col">
-                        <img class="img-fluid " src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/img/promiseSpiderman.jpg" alt=""/>
+                        <img class="img-fluid " src="/src/img/promiseSpiderman.jpg" alt=""/>
                     </div>  
                 </div>
            </div>
@@ -138,9 +162,7 @@
       <button id="imprimiendoTmdb">probando probando</button>
       <!-- End Section JUMBOTRON -->
 
-
-
-
+  
 
          <form action="#">
             <p> <input type="text" id="search" placeholder="type something" class="form control"></p>
@@ -150,7 +172,13 @@
          <div id="results">
           <p>Just testing out the Marvel API pulling some comics. For more information on the API go to <a href="https://developer.marvel.com">developer.marvel.com</a></p>
         </div>
+
+        <section class="container my-5 text-center">
+          
+        </section>
+  
     </div>
+
 
     <!-- Etiqueta script archivos Bootstrap en proyecto  -->
     <script
@@ -168,13 +196,15 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
     <!-- Etiqueta script archivos .js en proyecto  -->
 
     <script src="data.js"></script>
     <script src="main.js"></script>
     <script src="paty.js"></script>
-    <script src="/home/laboratoriad318/Escritorio/SCL009-hackathon-peliculas/src/jquery/jquery.min.js"></script>
+    <script src="/src/jquery/jquery.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
     <script src="https://apis.google.com/js/client.js"></script>
